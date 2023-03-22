@@ -1,13 +1,13 @@
-FROM node
+FROM node:14-alpine
 
 WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm i -g @nestjs/cli
+RUN npm install
 
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "run", "start:dev"]
+CMD ["npm", "run", "start:prod"]
