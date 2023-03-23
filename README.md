@@ -1,7 +1,9 @@
 ## Running the app
 
-// backend/
+### backend
+
 nest start
 
-// frontend/
+### frontend
+
 npm start
