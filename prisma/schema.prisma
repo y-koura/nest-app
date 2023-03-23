@@ -17,3 +17,8 @@ model Task {
   due_on DateTime?
   is_done Boolean @default(false)
 }
+
+model Cat {
+  id Int @id @default(autoincrement())
+  name String
+}
